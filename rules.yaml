@@ -1,0 +1,291 @@
+rules:
+  - id: value_dot_zero
+    name: '值后加.0 ("id":123.0)'
+    template: '"{param}":"{value}.0"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: value_dot_one
+    name: '值后加.1 ("id":123.1)'
+    template: '"{param}":"{value}.1"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+  
+  - id: param_upper
+    name: '参数名全大写 ("ID":"value")'
+    template: '"{param_upper}":"{value}"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+  
+  - id: value_prefix_zwsp
+    name: '值前加零宽度空格(U+200B)'
+    template: '"{param}":"​{value}"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+  
+  - id: value_prefix_hanguozifu
+    name: '值前加隐形字符(韩国)'
+    template: '"{param}":"ᅠ{value}"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+  
+  - id: value_prefix_kongge
+    name: '值前加空格'
+    template: '"{param}":" {value}"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: value_prefix_0a
+    name: '值前加%0a ("id":"%0a123")'
+    template: '"{param}":"%0a{value}"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: value_zero_prefix
+    name: '值前加0 ("id":"01")'
+    template: '"{param}":"0{value}"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+  
+  - id: fixed_value_asterisk
+    name: '固定值 * ("id":"*")'
+    template: '"{param}":"*"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: fixed_value_percent
+    name: '固定值 % ("id":"%")'
+    template: '"{param}":"%"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: fixed_value_percent_a
+    name: '固定值 %a ("id":"%a")'
+    template: '"{param}":"%a"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: fixed_value_underscore
+    name: '固定值 _ ("id":"_")'
+    template: '"{param}":"_"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: fixed_value_abc
+    name: '固定值 abc ("id":"abc")'
+    template: '"{param}":"abc"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: fixed_value_null
+    name: '固定值 null ("id":"null")'
+    template: '"{param}":"null"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: fixed_value_undefined
+    name: '固定值 undefined ("id":"undefined")'
+    template: '"{param}":"undefined"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: fixed_value_true
+    name: '固定值 true ("id":"true")'
+    template: '"{param}":"true"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: fixed_value_false
+    name: '固定值 false ("id":"false")'
+    template: '"{param}":"false"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: fixed_value_.
+    name: '固定值 . ("id":".")'
+    template: '"{param}":"."'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: fixed_value_0
+    name: '固定值 0 ("id":"0")'
+    template: '"{param}":"0"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: fixed_value_1
+    name: '固定值 1 ("id":"1")'
+    template: '"{param}":"1"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: fixed_value_2
+    name: '固定值 2 ("id":"2")'
+    template: '"{param}":"2"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: fixed_value_3
+    name: '固定值 3 ("id":"3")'
+    template: '"{param}":"3"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: fixed_value_neg1
+    name: '固定值 -1 ("id":"-1")'
+    template: '"{param}":"-1"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: fixed_value_99999999999
+    name: '固定值 99999999999 ("id":"99999999999")'
+    template: '"{param}":"99999999999"'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+  
+
+  - id: value_empty
+    name: '参数值置空 (id= / "id":"")'
+    template: '"{param}":""'
+    formats: ['url', 'form', 'json']
+    hpp: false
+    encode: none
+    enabled: true
+
+  - id: hpp_duplicate_reverse
+    name: 'HPP重复反向 (id=124&id=123)'
+    template: '{param}={extra}&{param}={value}'
+    formats: ['url', 'form']
+    hpp: true
+    encode: none
+    enabled: true
+    need_extra: true
+
+  - id: hpp_duplicate_forward
+    name: 'HPP重复正向 (id=123&id=124)'
+    template: '{param}={value}&{param}={extra}'
+    formats: ['url', 'form']
+    hpp: true
+    encode: none
+    enabled: true
+    need_extra: true
+
+  - id: hpp_comma_forward
+    name: 'HPP逗号正向 (id=123,124)'
+    template: '{param}={value},{extra}'
+    formats: ['url', 'form']
+    hpp: true
+    encode: none
+    enabled: true
+    need_extra: true
+
+  - id: hpp_comma_reverse
+    name: 'HPP逗号反向 (id=124,123)'
+    template: '{param}={extra},{value}'
+    formats: ['url', 'form']
+    hpp: true
+    encode: none
+    enabled: true
+    need_extra: true
+
+  - id: hpp_bracket_array
+    name: 'HPP方括号数组 (id=[123,124])'
+    template: '{param}=[{value},{extra}]'
+    formats: ['url', 'form']
+    hpp: true
+    encode: none
+    enabled: true
+    need_extra: true
+
+  - id: hpp_bracket_reverse
+    name: 'HPP方括号数组反向 (id=[124,123])'
+    template: '{param}=[{extra},{value}]'
+    formats: ['url', 'form']
+    hpp: true
+    encode: none
+    enabled: true
+    need_extra: true
+
+  - id: hpp_json_array_forward
+    name: 'HPP JSON数组正向 ("id":["123","124"])'
+    template: '"{param}":["{value}","{extra}"]'
+    formats: ['json']
+    hpp: true
+    encode: none
+    enabled: true
+    need_extra: true
+
+  - id: hpp_json_array_reverse
+    name: 'HPP JSON数组反向 ("id":["124","123"])'
+    template: '"{param}":["{extra}","{value}"]'
+    formats: ['json']
+    hpp: true
+    encode: none
+    enabled: true
+    need_extra: true
+
+  - id: hpp_json_duplicate_forward
+    name: 'HPP JSON重复正向 ("id":"123","id":"124")'
+    template: '"{param}":"{value}","{param}":"{extra}"'
+    formats: ['json']
+    hpp: true
+    encode: none
+    enabled: true
+    need_extra: true
+
+  - id: hpp_json_duplicate_reverse
+    name: 'HPP JSON重复反向 ("id":"124","id":"123")'
+    template: '"{param}":"{extra}","{param}":"{value}"'
+    formats: ['json']
+    hpp: true
+    encode: none
+    enabled: true
+    need_extra: true
