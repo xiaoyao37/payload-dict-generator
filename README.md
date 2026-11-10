@@ -21,4 +21,4 @@
 
 生成的字典直接使用bp的intruder模块进行爆破使用
 
-![dd55c70d-8787-4276-bcdd-3181111e301b](file:///C:/Users/%E5%88%98%E6%AF%85%E8%B1%AA/Pictures/Typedown/dd55c70d-8787-4276-bcdd-3181111e301b.png)
+![运行界面](demo.png)
